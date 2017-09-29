@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="windows-1256">
-<title>Insert title here</title>
+<title>Ticket reservation system</title>
 </head>
 <body>
 
@@ -10,11 +10,11 @@
 <b></b>
 <form action="InsertTicket" method="POST">
 <pre>
-<b>name:        </b><input type="text" id="name" name="name">       <b>origin: </b><input type="text" id="origin" name="origin">
+<b>name:        </b><input type="text" id="name" name="name" required>       <b>origin: </b><input type="text" id="origin" name="origin"required>
 
-<b>destination: </b><input type="text" id="destination" name="destination"><b>flight number: </b><input type="number" id="flightNumber" name="flightNumber">
+<b>destination: </b><input type="text" id="destination" name="destination" required><b>flight number: </b><input type="number" id="flightNumber" name="flightNumber" required>
 
-<b>date:        </b><input type="text" id="date" name="date">                         <input type="button" value="insert" >
+<b>date:        </b><input type="text" id="date" name="date" required>                         <input type="submit" value="insert" >
 </pre>
 </form>
 <hr>
@@ -24,7 +24,7 @@
 <h1>show Ticket</h1>
 <form action="ShowTicket" method="POST">
 <pre>
-<b>Ticket code:</b><input type="number" name="TicektCode" id="TicketCode">                           <input type="button" value="show">
+<b>Ticket code:</b><input type="number" name="TicektCode" id="TicketCode" required>                           <input type="submit" value="show">
 </pre>
 
 </form>
@@ -34,11 +34,11 @@
 
 <form action="UpdateTicket" method="POST">
 <pre>
-<b>name:        </b><input type="text" id="name" name="name">       <b>origin: </b><input type="text" id="origin" name="origin">
+<b>name:        </b><input type="text" id="name" name="name" required>       <b>origin: </b><input type="text" id="origin" name="origin" required>
 
-<b>destination: </b><input type="text" id="destination" name="destination"><b>flight number: </b><input type="number" id="flightNumber" name="flightNumber">
+<b>destination: </b><input type="text" id="destination" name="destination" required><b>flight number: </b><input type="number" id="flightNumber" name="flightNumber" required>
 
-<b>date:        </b><input type="text" id="date" name="date">                         <input type="button" value="update" >
+<b>date:        </b><input type="text" id="date" name="date" required>                         <input type="submit" value="update" required>
 </pre>
 </form>
 <hr>
@@ -48,7 +48,7 @@
 <h1>delete Ticket</h1>
 <form action="DeleteTicket" method="POST">
 <pre>
-<b>Ticket code:</b><input type="number" name="TicektCode" id="TicketCode">                           <input type="button" value="delete">
+<b>Ticket code:</b><input type="number" name="TicektCode" id="TicketCode" required>                           <input type="submit" value="delete">
 </pre>
 
 </form>
